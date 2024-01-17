@@ -92,22 +92,66 @@ ol {
   margin-block-end: 5px;
 }
 
+.search-form__textfield {
+  color: rgba(255, 255, 255, 0.70);
+  width: 225px;
+  height: 27px;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  appearance: none;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #FFF;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.search-form__textfield:focus {
+  text-decoration: none;
+}
+
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
   column-gap: 15px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .search-form__label {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  column-gap: 5px;
   /* width: fit-content; */
 }
 
+.search-form__checkbox-list:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
+.button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  
+  width: 19px;
+  height: 19px;
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+
+}
 
 .result__video-container {
   position: relative;
